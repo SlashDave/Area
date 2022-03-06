@@ -39,11 +39,13 @@ class _YoutubeServiceState extends State<YoutubeService> {
                     TriggerActionWidget(
                         icon: FontAwesomeIcons.youtube,
                         action: "Like a Youtube Video",
+                        icon2: FontAwesomeIcons.twitter,
                         reaction: "Post on Twitter the video link URL"),
                     Gap(20),
                     TriggerActionWidget(
                         icon: FontAwesomeIcons.youtube,
                         action: "Like a Youtube Video",
+                        icon2: FontAwesomeIcons.reddit,
                         reaction: "Post on Reddit the video link URL"),
                   ],
                 ),

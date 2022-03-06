@@ -38,11 +38,13 @@ class _SpotifyServiceState extends State<SpotifyService> {
                     TriggerActionWidget(
                         icon: FontAwesomeIcons.spotify,
                         action: "Add a Song to a Spotify Playlist",
+                        icon2: FontAwesomeIcons.twitter,
                         reaction: "Post the Song Cover on Twitter"),
                     Gap(20),
                     TriggerActionWidget(
                         icon: FontAwesomeIcons.spotify,
                         action: "Add a Song to a Spotify Playlist",
+                        icon2: FontAwesomeIcons.reddit,
                         reaction: "Post the Song Cover on Reddit"),
                     Gap(20),
                   ],

@@ -35,11 +35,13 @@ class _DeezerServiceState extends State<DeezerService> {
             TriggerActionWidget(
                 icon: FontAwesomeIcons.deezer,
                 action: "Add a Song to a Deezer Playlist",
+                icon2: FontAwesomeIcons.twitter,
                 reaction: "Post the Song Cover on Twitter"),
             Gap(20),
             TriggerActionWidget(
                 icon: FontAwesomeIcons.deezer,
                 action: "Add a Song to a Deezer Playlist",
+                icon2: FontAwesomeIcons.reddit,
                 reaction: "Post the Song Cover on Reddit"),
             Gap(20),
           ],

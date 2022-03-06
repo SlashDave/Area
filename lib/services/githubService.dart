@@ -39,18 +39,21 @@ class _GitHubServiceState extends State<GitHubService> {
                     TriggerActionWidget(
                         icon: FontAwesomeIcons.github,
                         action: "Create a Public Repository",
+                        icon2: FontAwesomeIcons.twitter,
                         reaction:
                             "Post on Twitter a link to make a Pull request"),
                     Gap(20),
                     TriggerActionWidget(
                         icon: FontAwesomeIcons.github,
                         action: "Create a Public Repository",
+                        icon2: FontAwesomeIcons.reddit,
                         reaction:
                             "Post on Reddit a link to make a Pull request"),
                     Gap(20),
                     TriggerActionWidget(
                         icon: FontAwesomeIcons.github,
                         action: "Pull request on Github Repository",
+                        icon2: FontAwesomeIcons.twitter,
                         reaction: "Receive a Twitter notification"),
                   ],
                 ),

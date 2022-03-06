@@ -39,6 +39,7 @@ class _RedditServiceState extends State<RedditService> {
                     TriggerActionWidget(
                         icon: FontAwesomeIcons.reddit,
                         action: "Make a Post on Reddit",
+                        icon2: FontAwesomeIcons.twitter,
                         reaction: "Have the same Post on Twitter"),
                   ],
                 ),

@@ -5,10 +5,12 @@ class TriggerActionWidget extends StatelessWidget {
   final String action;
   final String reaction;
   final IconData icon;
+  final IconData icon2;
   const TriggerActionWidget(
       {Key? key,
       required this.action,
       required this.reaction,
+      required this.icon2,
       required this.icon})
       : super(key: key);
 
