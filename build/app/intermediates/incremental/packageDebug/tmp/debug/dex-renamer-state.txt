@@ -1,0 +1,4 @@
+#Sun Mar 06 18:16:26 WAT 2022
+base.0=/home/nery/Area/build/app/intermediates/dex/debug/mergeDexDebug/classes.dex
+renamed.0=classes.dex
+path.0=classes.dex

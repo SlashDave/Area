@@ -1,6 +1,7 @@
 import 'package:flutter/material.dart';
 import 'package:area/widgets/appNavbarWidget.dart';
 import 'package:area/widgets/trigger_action.dart';
+import 'package:font_awesome_flutter/font_awesome_flutter.dart';
 import 'package:gap/gap.dart';
 
 class YoutubeService extends StatefulWidget {
@@ -36,10 +37,12 @@ class _YoutubeServiceState extends State<YoutubeService> {
                   children: const [
                     Gap(20),
                     TriggerActionWidget(
+                        icon: FontAwesomeIcons.youtube,
                         action: "Like a Youtube Video",
                         reaction: "Post on Twitter the video link URL"),
                     Gap(20),
                     TriggerActionWidget(
+                        icon: FontAwesomeIcons.youtube,
                         action: "Like a Youtube Video",
                         reaction: "Post on Reddit the video link URL"),
                   ],

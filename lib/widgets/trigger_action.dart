@@ -1,11 +1,16 @@
 import 'package:flutter/material.dart';
+import 'package:font_awesome_flutter/font_awesome_flutter.dart';
 import 'package:gap/gap.dart';
 
 class TriggerActionWidget extends StatelessWidget {
   final String action;
   final String reaction;
+  final IconData icon;
   const TriggerActionWidget(
-      {Key? key, required this.action, required this.reaction})
+      {Key? key,
+      required this.action,
+      required this.reaction,
+      required this.icon})
       : super(key: key);
 
   @override
@@ -37,9 +42,9 @@ class TriggerActionWidget extends StatelessWidget {
               ),
               child: Column(
                 children: [
-                  const CircleAvatar(
+                  CircleAvatar(
                     radius: 35,
-                    //child: Image du service,
+                    child: Icon(icon),
                   ),
                   const Gap(10),
                   Text(

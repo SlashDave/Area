@@ -1,6 +1,7 @@
 import 'package:flutter/material.dart';
 import 'package:area/widgets/appNavbarWidget.dart';
 import 'package:area/widgets/trigger_action.dart';
+import 'package:font_awesome_flutter/font_awesome_flutter.dart';
 import 'package:gap/gap.dart';
 
 class GitHubService extends StatefulWidget {
@@ -36,16 +37,19 @@ class _GitHubServiceState extends State<GitHubService> {
                   children: const [
                     Gap(20),
                     TriggerActionWidget(
+                        icon: FontAwesomeIcons.github,
                         action: "Create a Public Repository",
                         reaction:
                             "Post on Twitter a link to make a Pull request"),
                     Gap(20),
                     TriggerActionWidget(
+                        icon: FontAwesomeIcons.github,
                         action: "Create a Public Repository",
                         reaction:
                             "Post on Reddit a link to make a Pull request"),
                     Gap(20),
                     TriggerActionWidget(
+                        icon: FontAwesomeIcons.github,
                         action: "Pull request on Github Repository",
                         reaction: "Receive a Twitter notification"),
                   ],
