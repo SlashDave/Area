@@ -6,13 +6,13 @@ class TriggerActionWidget extends StatelessWidget {
   final String reaction;
   final IconData icon;
   final IconData icon2;
-  const TriggerActionWidget(
-      {Key? key,
-      required this.action,
-      required this.reaction,
-      required this.icon2,
-      required this.icon})
-      : super(key: key);
+  const TriggerActionWidget({
+    Key? key,
+    required this.action,
+    required this.reaction,
+    required this.icon2,
+    required this.icon,
+  }) : super(key: key);
 
   @override
   Widget build(BuildContext context) {
@@ -80,8 +80,9 @@ class TriggerActionWidget extends StatelessWidget {
               ),
               child: Column(
                 children: [
-                  const CircleAvatar(
+                  CircleAvatar(
                     radius: 35,
+                    child: Icon(icon2),
                     //child: Image du service,
                   ),
                   const Gap(10),

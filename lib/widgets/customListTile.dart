@@ -1,6 +1,5 @@
+// ignore: file_names
 import 'package:flutter/material.dart';
-
-import '../screens/signUpPage.dart';
 
 class CustomListTile extends StatelessWidget {
   const CustomListTile(
