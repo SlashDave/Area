@@ -25,7 +25,7 @@ class _UserProfilePageState extends State<UserProfilePage> {
             Gap(MediaQuery.of(context).size.height * (0.1)),
             const Align(
               child: Text(
-                "Account Settings",
+                "Account Informations",
                 style: TextStyle(
                   color: Colors.black,
                   fontSize: 40,

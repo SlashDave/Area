@@ -1,6 +1,7 @@
 import 'package:area/screens/homePage.dart';
 import 'package:area/screens/servicesPage.dart';
 import 'package:area/screens/userProfilePage.dart';
+import 'package:area/services/activatedApplet.dart';
 import 'package:flutter/material.dart';
 import 'package:gap/gap.dart';
 
@@ -27,6 +28,21 @@ class AppNavBarWidget extends StatelessWidget {
           ),
         ),
         const Expanded(child: SizedBox()),
+        TextButton(
+          onPressed: () => Navigator.of(context).push(
+            MaterialPageRoute(
+              builder: (context) => const ActivatedService(),
+            ),
+          ),
+          child: const Text(
+            'Applets',
+            style: TextStyle(
+              fontSize: 25,
+              fontWeight: FontWeight.w600,
+            ),
+          ),
+        ),
+        const Gap(20),
         TextButton(
           onPressed: () => Navigator.of(context).push(
             MaterialPageRoute(
