@@ -1,17 +1,16 @@
-// ignore: file_names
 import 'package:area/widgets/appNavbarWidget.dart';
 import 'package:area/widgets/trigger_action.dart';
-import 'package:gap/gap.dart';
 import 'package:flutter/material.dart';
+import 'package:gap/gap.dart';
 
-class ExposeServices extends StatefulWidget {
-  const ExposeServices({Key? key}) : super(key: key);
+class TwitterService extends StatefulWidget {
+  const TwitterService({Key? key}) : super(key: key);
 
   @override
-  State<ExposeServices> createState() => _ExposeServicesState();
+  State<TwitterService> createState() => _TwitterServiceState();
 }
 
-class _ExposeServicesState extends State<ExposeServices> {
+class _TwitterServiceState extends State<TwitterService> {
   @override
   Widget build(BuildContext context) {
     return Scaffold(
@@ -25,7 +24,7 @@ class _ExposeServicesState extends State<ExposeServices> {
             AppNavBarWidget(),
             Gap(50),
             Text(
-              "Actions & Reaction of Deezer Service",
+              "Actions & Reaction of Twitter Service",
               style: TextStyle(
                 fontSize: 40,
                 fontWeight: FontWeight.w600,

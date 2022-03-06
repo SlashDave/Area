@@ -1,17 +1,16 @@
-// ignore: file_names
+import 'package:flutter/material.dart';
 import 'package:area/widgets/appNavbarWidget.dart';
 import 'package:area/widgets/trigger_action.dart';
 import 'package:gap/gap.dart';
-import 'package:flutter/material.dart';
 
-class ExposeServices extends StatefulWidget {
-  const ExposeServices({Key? key}) : super(key: key);
+class DeezerService extends StatefulWidget {
+  const DeezerService({Key? key}) : super(key: key);
 
   @override
-  State<ExposeServices> createState() => _ExposeServicesState();
+  State<DeezerService> createState() => _DeezerServiceState();
 }
 
-class _ExposeServicesState extends State<ExposeServices> {
+class _DeezerServiceState extends State<DeezerService> {
   @override
   Widget build(BuildContext context) {
     return Scaffold(
@@ -31,6 +30,15 @@ class _ExposeServicesState extends State<ExposeServices> {
                 fontWeight: FontWeight.w600,
               ),
             ),
+            Gap(20),
+            TriggerActionWidget(
+                action: "Add a Song to a Deezer Playlist",
+                reaction: "Post the Song Cover on Twitter"),
+            Gap(20),
+            TriggerActionWidget(
+                action: "Add a Song to a Deezer Playlist",
+                reaction: "Post the Song Cover on Reddit"),
+            Gap(20),
           ],
         ),
       ),

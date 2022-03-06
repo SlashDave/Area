@@ -2,7 +2,11 @@ import 'package:flutter/material.dart';
 import 'package:gap/gap.dart';
 
 class TriggerActionWidget extends StatelessWidget {
-  const TriggerActionWidget({Key? key}) : super(key: key);
+  final String action;
+  final String reaction;
+  const TriggerActionWidget(
+      {Key? key, required this.action, required this.reaction})
+      : super(key: key);
 
   @override
   Widget build(BuildContext context) {
@@ -38,8 +42,8 @@ class TriggerActionWidget extends StatelessWidget {
                     //child: Image du service,
                   ),
                   const Gap(10),
-                  const Text(
-                    "Je reçois une notification",
+                  Text(
+                    action,
                   ),
                   const Gap(10),
                   OutlinedButton(
@@ -75,8 +79,8 @@ class TriggerActionWidget extends StatelessWidget {
                     //child: Image du service,
                   ),
                   const Gap(10),
-                  const Text(
-                    "J'envoie les nudes",
+                  Text(
+                    reaction,
                   ),
                   const Gap(10),
                   OutlinedButton(
@@ -87,12 +91,12 @@ class TriggerActionWidget extends StatelessWidget {
               ),
             ),
             ElevatedButton.icon(
-              icon: Icon(
+              icon: const Icon(
                 // Icons.close,
                 Icons.done,
               ),
               onPressed: () {},
-              label: Text("Activer"),
+              label: const Text("Activer"),
             ),
           ],
         ),

@@ -1,7 +1,11 @@
 import 'package:area/screens/homePage.dart';
 import 'package:area/screens/servicesPage.dart';
 import 'package:area/screens/userProfilePage.dart';
+import 'package:area/services/deezerService.dart';
 import 'package:area/services/exposeService.dart';
+import 'package:area/services/githubService.dart';
+import 'package:area/services/gmailService.dart';
+import 'package:area/services/redditService.dart';
 import 'package:area/services/serviceConnect.dart';
 import 'package:flutter/material.dart';
 
@@ -35,7 +39,7 @@ class MyApp extends StatelessWidget {
           ),
         ),
       ),
-      home: const ExposeServices(),
+      home: ServicesPage(),
     );
   }
 }

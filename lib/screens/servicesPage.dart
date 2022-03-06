@@ -1,3 +1,12 @@
+import 'package:area/services/deezerService.dart';
+import 'package:area/services/githubService.dart';
+import 'package:area/services/gmailService.dart';
+import 'package:area/services/redditService.dart';
+import 'package:area/services/spotifyService.dart';
+import 'package:area/services/twitterService.dart';
+import 'package:area/services/instagramService.dart';
+import 'package:area/services/weatherService.dart';
+import 'package:area/services/youtubeService.dart';
 import 'package:area/widgets/appNavbarWidget.dart';
 import 'package:area/widgets/customListTile.dart';
 import 'package:flutter/material.dart';
@@ -42,26 +51,31 @@ class _ServicesPageState extends State<ServicesPage> {
                     SizedBox(
                       width: MediaQuery.of(context).size.width * (0.4),
                       child: Column(
-                        children: const [
+                        children: [
                           CustomListTile(
                             icon: FontAwesomeIcons.google,
-                            text: "Google",
+                            text: "Gmail",
+                            ataviPage: GmailService(),
                           ),
                           CustomListTile(
                             icon: FontAwesomeIcons.github,
                             text: "Github",
+                            ataviPage: GitHubService(),
                           ),
                           CustomListTile(
-                            icon: FontAwesomeIcons.facebook,
-                            text: "Facebook",
+                            icon: FontAwesomeIcons.youtube,
+                            text: "Youtube",
+                            ataviPage: YoutubeService(),
                           ),
                           CustomListTile(
                             icon: FontAwesomeIcons.instagram,
                             text: "Instagram",
+                            ataviPage: InstagramService(),
                           ),
                           CustomListTile(
                             icon: FontAwesomeIcons.twitter,
                             text: "Twitter",
+                            ataviPage: TwitterService(),
                           ),
                         ],
                       ),
@@ -73,23 +87,27 @@ class _ServicesPageState extends State<ServicesPage> {
                           CustomListTile(
                             icon: FontAwesomeIcons.spotify,
                             text: "Spotify",
+                            ataviPage: SpotifyService(),
                           ),
                           CustomListTile(
                             icon: FontAwesomeIcons.deezer,
                             text: "Deezer",
+                            ataviPage: DeezerService(),
                           ),
                           CustomListTile(
                             icon: FontAwesomeIcons.reddit,
                             text: "Reddit",
+                            ataviPage: RedditService(),
                           ),
                           CustomListTile(
-                            icon: FontAwesomeIcons.rss,
-                            text: "RSS",
+                            icon: FontAwesomeIcons.sun,
+                            text: "Weather",
+                            ataviPage: WeatherService(),
                           ),
-                          CustomListTile(
-                            icon: FontAwesomeIcons.dropbox,
-                            text: "Dropbox",
-                          ),
+                          // CustomListTile(
+                          //   icon: FontAwesomeIcons.dropbox,
+                          //   text: "Dropbox",
+                          // ),
                         ],
                       ),
                     ),

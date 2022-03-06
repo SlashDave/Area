@@ -1,14 +1,18 @@
 import 'package:flutter/material.dart';
 
+import '../screens/signUpPage.dart';
+
 class CustomListTile extends StatelessWidget {
-  const CustomListTile({
-    Key? key,
-    required this.icon,
-    required this.text,
-  }) : super(key: key);
+  const CustomListTile(
+      {Key? key,
+      required this.icon,
+      required this.text,
+      required this.ataviPage})
+      : super(key: key);
 
   final IconData icon;
   final String text;
+  final StatefulWidget ataviPage;
   @override
   Widget build(BuildContext context) {
     return Container(
@@ -22,7 +26,13 @@ class CustomListTile extends StatelessWidget {
       child: ListTile(
         leading: Icon(icon),
         title: Text(text),
-        onTap: () {},
+        onTap: () => {
+          Navigator.of(context).push(
+            MaterialPageRoute(
+              builder: (context) => ataviPage,
+            ),
+          )
+        },
         tileColor: Colors.blue,
       ),
     );
